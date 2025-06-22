@@ -1,20 +1,21 @@
-package com.shelter.management.application.ports.out;
+package com.shelter.management.infrastructure.adapters.out.persistence;
 
 import com.shelter.management.domain.entities.AnimalStatusHistory;
 import com.shelter.management.domain.enums.AnimalStatus;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
+
 @Repository
-public interface AnimalStatusHistoryRepository {
-    AnimalStatusHistory save(AnimalStatusHistory statusHistory);
-    Optional<AnimalStatusHistory> findById(Long id);
-    List<AnimalStatusHistory> findAll();
+public interface SpringDataAnimalStatusHistoryRepository extends JpaRepository<AnimalStatusHistory, Long> {
+    
     List<AnimalStatusHistory> findByAnimalId(Long animalId);
+    
     List<AnimalStatusHistory> findByAnimalIdOrderByChangeDateDesc(Long animalId);
+    
     List<AnimalStatusHistory> findByNewStatus(AnimalStatus status);
+    
     List<AnimalStatusHistory> findByChangeDateBetween(LocalDateTime startDate, LocalDateTime endDate);
-    void deleteById(Long id);
 }

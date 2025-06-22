@@ -1,18 +1,18 @@
-package com.shelter.management.application.ports.out;
+package com.shelter.management.infrastructure.adapters.out.persistence;
 
 import com.shelter.management.domain.entities.FoodUsage;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
+
 @Repository
-public interface FoodUsageRepository {
-    FoodUsage save(FoodUsage foodUsage);
-    Optional<FoodUsage> findById(Long id);
-    List<FoodUsage> findAll();
+public interface SpringDataFoodUsageRepository extends JpaRepository<FoodUsage, Long> {
+    
     List<FoodUsage> findByFoodId(Long foodId);
+    
     List<FoodUsage> findByAnimalId(Long animalId);
+    
     List<FoodUsage> findByUsageDateBetween(LocalDate startDate, LocalDate endDate);
-    void deleteById(Long id);
 }

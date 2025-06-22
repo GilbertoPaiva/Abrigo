@@ -1,9 +1,8 @@
-
-CREATE TABLE food_usage (
+    CREATE TABLE food_usage (
     id BIGSERIAL PRIMARY KEY,
     food_id BIGINT NOT NULL,
     animal_id BIGINT,
-    quantity_used DECIMAL(8,2) NOT NULL,
+    quantity_used DOUBLE PRECISION NOT NULL,
     usage_date DATE NOT NULL,
     used_by VARCHAR(255),
     observations TEXT,
