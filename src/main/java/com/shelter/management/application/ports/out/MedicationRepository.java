@@ -1,4 +1,4 @@
-package com.shelter.management.application.ports.out;
+package main.java.com.shelter.management.application.ports.out;
 
 import com.shelter.management.domain.entities.Medication;
 

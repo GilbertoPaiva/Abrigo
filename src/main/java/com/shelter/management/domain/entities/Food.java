@@ -1,4 +1,4 @@
-package com.shelter.management.domain.entities;
+package main.java.com.shelter.management.domain.entities;
 
 import com.shelter.management.domain.enums.AgeGroup;
 import com.shelter.management.domain.enums.AnimalType;

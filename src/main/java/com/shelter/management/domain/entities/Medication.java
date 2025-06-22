@@ -1,4 +1,4 @@
-package com.shelter.management.domain.entities;
+package main.java.com.shelter.management.domain.entities;
 
 import com.shelter.management.domain.enums.MedicationType;
 import lombok.*;

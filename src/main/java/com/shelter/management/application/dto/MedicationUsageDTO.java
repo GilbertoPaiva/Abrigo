@@ -1,4 +1,4 @@
-package com.shelter.management.application.dto;
+package main.java.com.shelter.management.application.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
