@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.domain.entities;
+package com.shelter.management.domain.entities;
 
 import com.shelter.management.domain.enums.AnimalSize;
 import com.shelter.management.domain.enums.AnimalStatus;
@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -35,7 +36,8 @@ public class Animal {
     
     private Integer age; // Em meses
     
-    private Double weight; // Em kg
+    @Column(precision = 5, scale = 2)
+    private BigDecimal weight; // Em kg
     
     @Enumerated(EnumType.STRING)
     private AnimalSize size;

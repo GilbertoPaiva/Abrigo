@@ -1,6 +1,8 @@
-package main.java.com.shelter.management.application.dto;
+package com.shelter.management.application.dto;
 
 import lombok.*;
+
+import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
@@ -11,7 +13,7 @@ public class UpdateAnimalDTO {
     private String name;
     private String breed;
     private Integer age;
-    private Double weight;
+    private BigDecimal weight;
     private String size;
     private String color;
     private String observations;

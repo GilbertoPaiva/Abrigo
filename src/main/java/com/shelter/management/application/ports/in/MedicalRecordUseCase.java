@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.application.ports.in;
+package com.shelter.management.application.ports.in;
 
 import com.shelter.management.application.dto.MedicalRecordDTO;
 import com.shelter.management.application.dto.CreateMedicalRecordDTO;

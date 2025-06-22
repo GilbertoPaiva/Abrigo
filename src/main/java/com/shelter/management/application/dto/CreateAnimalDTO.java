@@ -1,8 +1,9 @@
-package main.java.com.shelter.management.application.dto;
+package com.shelter.management.application.dto;
 
 import lombok.*;
 
 import jakarta.validation.constraints.NotBlank;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
@@ -19,7 +20,7 @@ public class CreateAnimalDTO {
     
     private String breed;
     private Integer age;
-    private Double weight;
+    private BigDecimal weight;
     private String size;
     private String gender;
     private String color;

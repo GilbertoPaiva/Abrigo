@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.infrastructure.adapters.out.persistence;
+package com.shelter.management.infrastructure.adapters.out.persistence;
 
 import com.shelter.management.domain.entities.Animal;
 import com.shelter.management.domain.enums.AnimalStatus;

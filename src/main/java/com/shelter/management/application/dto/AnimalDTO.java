@@ -1,7 +1,8 @@
-package main.java.com.shelter.management.application.dto;
+package com.shelter.management.application.dto;
 
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -16,7 +17,7 @@ public class AnimalDTO {
     private String species;
     private String breed;
     private Integer age;
-    private Double weight;
+    private BigDecimal weight;
     private String size;
     private String gender;
     private String color;

@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.application.services;
+package com.shelter.management.application.services;
 
 import com.shelter.management.application.dto.*;
 import com.shelter.management.application.ports.in.FoodManagementUseCase;

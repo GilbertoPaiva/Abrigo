@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.domain.enums;
+package com.shelter.management.domain.enums;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.application.ports.out;
+package com.shelter.management.application.ports.out;
 
 import com.shelter.management.domain.entities.Food;
 import com.shelter.management.domain.enums.AnimalType;

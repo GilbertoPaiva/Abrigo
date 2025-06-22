@@ -1,4 +1,4 @@
-package main.java.com.shelter.management.infrastructure.config;
+package com.shelter.management.infrastructure.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
